@@ -1,7 +1,7 @@
 import ReactDOM from "react-dom/client";
 import React from "react";
-import { restaurants } from "./constants/mock";
 import { App } from "./App";
+import './styles/index.scss'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
