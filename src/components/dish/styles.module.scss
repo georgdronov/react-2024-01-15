@@ -1,0 +1,14 @@
+.root {
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.dish{
+    &__wrapper{
+        margin-right: 12px;
+    }
+}

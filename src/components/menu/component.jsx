@@ -8,7 +8,7 @@ export const Menu = ({ menu }) => {
       {menu.map((dish) => (
         <li>
           <Dish dish={dish} />
-          <Counter/>
+          
         </li>
       ))}
     </ul>

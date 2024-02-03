@@ -8,6 +8,7 @@ export const Button = ({
   onClick,
   className,
   size = Size.l,
+  disabled,
   viewVariant = ButtonViewVariant.primary,
 }) => {
   return (
@@ -19,6 +20,7 @@ export const Button = ({
         styles[viewVariant]
       )}
       onClick={onClick}
+      disabled={disabled}
     >
       {children}
     </button>

@@ -1,0 +1,14 @@
+.root{
+    display: flex;
+    align-items: center;
+    & span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        color: black;
+        width: 39px;
+        height: 39px;
+
+    }
+}

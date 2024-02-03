@@ -1,27 +1,27 @@
 import { Button } from "../button/component";
-import { useState } from "react";
 
-export const Counter = () => {
-  const [count, setCount] = useState(0);
+import styles from "./styles.module.scss";
+import classNames from "classnames";
+
+
+export const Counter = ({value, min = 0, max = 5, onChange}) => {
 
   return (
-    <div>
+    <div className={classNames(styles.root, classNames)}>
       <Button
         onClick={() => {
-          if (count > 0) {
-            setCount(count - 1);
-          }
+          onChange(value - 1);
         }}
+        disabled={value === min}
       >
         -
       </Button>
-      <span>{count}</span>
+      <span>{value}</span>
       <Button
         onClick={() => {
-          if (count < 5) {
-            setCount(count + 1);
-          }
+          onChange(value + 1);
         }}
+        disabled={value === max}
       >
         +
       </Button>
