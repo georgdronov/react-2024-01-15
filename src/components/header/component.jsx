@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 export const Header = () => {
   return (
     <header className={styles.root}>
-      <div>
+      <div className={styles.button__wrapper}>
         <Button
           className={styles.pageLink}
           onClick={() => console.log("Open PopUp callBack")}
