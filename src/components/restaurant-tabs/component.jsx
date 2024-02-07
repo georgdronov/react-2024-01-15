@@ -4,7 +4,7 @@ export const RestaurantTabs = ({ restaurants, onSelect }) => {
   return (
     <div>
       {restaurants.map(({ name, id }) => {
-        <Tab title={name} onClick={() => onSelect(id)} />;
+        return <Tab title={name} onClick={() => onSelect(id)} />;
       })}
     </div>
   );
