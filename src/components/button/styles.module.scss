@@ -1,3 +1,18 @@
+.root{
+    padding: 8px 16px;
+    border: none;
+    transition: .3s;
+    &:hover{
+        cursor: pointer;
+        background-color: chocolate;
+    }
+}
+
+.root:disabled{
+    background-color: chocolate;
+    pointer-events: none;
+}
+
 .primary {
     background-color: orange;
     color: white;
@@ -7,6 +22,8 @@
     background-color: white;
     color: black;
 }
+
+
 
 .s {
     font-size: 12px;

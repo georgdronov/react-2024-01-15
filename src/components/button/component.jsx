@@ -3,11 +3,24 @@ import classNames from "classnames";
 import { Size } from "../../constants/sizes";
 import { ButtonViewVariant } from "./constant";
 
-export const Button = ({ children, onClick, className, size = Size.l, viewVariant = ButtonViewVariant.primary }) => {
+export const Button = ({
+  children,
+  onClick,
+  className,
+  size = Size.l,
+  disabled,
+  viewVariant = ButtonViewVariant.primary,
+}) => {
   return (
     <button
-      className={classNames(styles.root, className, styles[size], styles[viewVariant])}
+      className={classNames(
+        styles.root,
+        className,
+        styles[size],
+        styles[viewVariant]
+      )}
       onClick={onClick}
+      disabled={disabled}
     >
       {children}
     </button>

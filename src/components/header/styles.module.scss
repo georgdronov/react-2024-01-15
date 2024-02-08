@@ -1,11 +1,10 @@
 .root {
     background-color: #181818;
-    padding: 20px;
+    padding: 1rem;
+
 }
 
-.pageLink {
-    margin-right: 10px;
-    &:last-child {
-        margin-right: 0;
-    }
+.button__wrapper{
+    display: flex;
+    gap: 1rem;
 }
