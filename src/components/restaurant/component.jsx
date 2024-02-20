@@ -14,7 +14,7 @@ export const Restaurant = ({ restaurant }) => {
         <h3>Reviews</h3>
         <Reviews reviews={restaurant.reviews} />
       </div>
-      <ReviewForm/>
+      <ReviewForm />
     </div>
   );
 };

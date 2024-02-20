@@ -16,7 +16,7 @@ export const RestaurantPage = () => {
       {activeRestaurant ? (
         <Restaurant restaurant={activeRestaurant} />
       ) : (
-        "No active restaurant"
+        <p>Выберите ресторан</p>
       )}
     </div>
   );
